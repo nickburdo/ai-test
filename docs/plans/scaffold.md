@@ -73,4 +73,5 @@ Status: **approved** (2026-10-09)
 - Git: init + commit, no push
 - Tests: Vitest, `node` env, logic only (no jsdom / Testing Library)
 - `docs/`: only this plan for now
+- `next.config.ts`: keep `cacheComponents: true` and `partialPrefetching: true` (create-next-app 16.4 defaults) — fits the planned server API + `searchParams`-driven list (runtime data access goes inside `<Suspense>`)
 - Revision (during step 2/4a): bump `@types/node` from `^20` (create-next-app default) to `^24` — `vitest@5` requires `^22 || >=24`; local runtime is Node 24
