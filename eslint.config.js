@@ -1,6 +1,8 @@
 import antfu from '@antfu/eslint-config';
 
 export default antfu({
+  // Documentation is not linted
+  ignores: ['docs/**'],
   react: true,
   typescript: true,
   stylistic: {
