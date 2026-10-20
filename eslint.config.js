@@ -1,8 +1,11 @@
 import antfu from '@antfu/eslint-config';
 
 export default antfu({
-  // Documentation is not linted
-  ignores: ['docs/**'],
+  // Only code is linted: the lint scripts target src, and non-code formats are off
+  jsonc: false,
+  yaml: false,
+  toml: false,
+  markdown: false,
   react: true,
   typescript: true,
   stylistic: {
